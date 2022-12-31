@@ -6,7 +6,7 @@
 /*   By: adiouane <adiouane@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/27 02:38:11 by adiouane          #+#    #+#             */
-/*   Updated: 2022/12/31 19:05:43 by adiouane         ###   ########.fr       */
+/*   Updated: 2022/12/31 20:50:55 by adiouane         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -96,7 +96,6 @@ int main(){
     // Animal *tst = new Animal();
     // Cat *a = new Cat();
     // a->makeSound(); 
-
     return 0;
 }
 

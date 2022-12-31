@@ -6,7 +6,7 @@
 /*   By: adiouane <adiouane@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/27 02:38:11 by adiouane          #+#    #+#             */
-/*   Updated: 2022/12/31 19:04:55 by adiouane         ###   ########.fr       */
+/*   Updated: 2022/12/31 19:34:26 by adiouane         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -75,7 +75,7 @@ int main(){
     // std::cout << "Dog2: " << dog2.getBrain()->getIdea(0) << std::endl;
     // std::cout << "--------------------------------------------" << std::endl;
 
-    // system("leaks a.out");
+    system("leaks a.out");
     return 0;
 }
 

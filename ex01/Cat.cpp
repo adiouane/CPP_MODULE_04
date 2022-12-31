@@ -6,7 +6,7 @@
 /*   By: adiouane <adiouane@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/27 02:38:12 by adiouane          #+#    #+#             */
-/*   Updated: 2022/12/31 18:55:59 by adiouane         ###   ########.fr       */
+/*   Updated: 2022/12/31 20:33:50 by adiouane         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,8 +30,6 @@ Cat::Cat(const Cat &obj)
 	std::cout << "(Cat)    copy constructor called" << std::endl;
 	this->brain = new Brain();
 	*this = obj;
-	std::cout << "this " << this << std::endl;
-	std::cout <<"obj " << &obj << std::endl;
 }
 
 Cat& Cat::operator=(const Cat &obj)

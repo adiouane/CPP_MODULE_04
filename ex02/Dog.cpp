@@ -6,7 +6,7 @@
 /*   By: adiouane <adiouane@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/25 00:27:30 by adiouane          #+#    #+#             */
-/*   Updated: 2022/12/30 19:37:29 by adiouane         ###   ########.fr       */
+/*   Updated: 2022/12/31 20:35:48 by adiouane         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,23 +25,16 @@ Dog::~Dog(void)
     delete this->brain;
 }
 
-/*
-  deep copy 
-*/
-
 Dog::Dog(const Dog &other)
 {
     std::cout << "Dog copy constructor called" << std::endl;
+    this->brain = new Brain();
     *this = other;
 }
-
 
 Dog& Dog::operator=(const Dog &other)
 {
     std::cout << "Dog assignation operator called" << std::endl;
-    if (this->brain)
-        delete this->brain;
-    this->brain = new Brain();
     this->type = other.type;
     *this->brain = *other.brain;
     return *this;
@@ -55,14 +48,4 @@ void Dog::makeSound()const
 Brain* Dog::getBrain(void)const
 {
     return this->brain;
-}
-
-Dog::Dog(Brain *brain){
-    this->brain = brain;
-}
-
-Dog &Dog::operator=(const Brain &other){
-    this->brain = new Brain();
-    *this->brain = other;
-    return *this;
 }

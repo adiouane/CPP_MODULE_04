@@ -6,7 +6,7 @@
 /*   By: adiouane <adiouane@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/27 02:38:15 by adiouane          #+#    #+#             */
-/*   Updated: 2022/12/30 19:51:15 by adiouane         ###   ########.fr       */
+/*   Updated: 2022/12/31 20:36:38 by adiouane         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,10 +21,6 @@ Brain::~Brain(void)
 {
     std::cout << "Brain destructor called" << std::endl;
 }
-
-/*
-  deep copy 
-*/
 
 Brain::Brain(const Brain &other)
 {

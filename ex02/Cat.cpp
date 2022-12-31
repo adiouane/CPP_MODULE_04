@@ -6,7 +6,7 @@
 /*   By: adiouane <adiouane@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/27 02:38:12 by adiouane          #+#    #+#             */
-/*   Updated: 2022/12/30 19:37:21 by adiouane         ###   ########.fr       */
+/*   Updated: 2022/12/31 20:35:53 by adiouane         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,27 +25,20 @@ Cat::~Cat(void)
 	delete this->brain;
 }
 
-/*
-  deep copy 
-*/
-
 Cat::Cat(const Cat &other)
 {
 	std::cout << "Cat copy constructor called" << std::endl;
+	this->brain = new Brain();
 	*this = other;
 }
-
 
 Cat& Cat::operator=(const Cat &other)
 {
 	std::cout << "Cat assignation operator called" << std::endl;
-	if (this->brain)
-        delete this->brain;
 	this->type = other.type;
 	*this->brain = *other.brain;
 	return *this;
 }
-
 
 void Cat::makeSound()const
 {
